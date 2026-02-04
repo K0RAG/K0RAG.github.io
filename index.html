@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | K0RAG</title>
+    <style>
+        /* Modern Dark Theme CSS */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { color: var(--accent); font-size: 1.2rem; font-weight: bold; }
+        
+        /* Sections */
+        section { margin-bottom: 60px; }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+        
+        /* Projects Grid (Hidden for now, but ready for later) */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { margin-top: 0; color: var(--accent); }
+        
+        /* Links */
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        /* Footer */
+        footer { text-align: center; color: var(--text-muted); padding: 40px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>K0RAG</h1>
+            <p class="subtitle">Computer Science Student & Developer</p>
+            <p>Passionate about building scalable software, AI, and solving complex problems.</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a student at <strong>MIT MANIPAL</strong>. I love turning ideas into code. 
+                Currently, I am focused on strengthening my fundamentals in Computer Science and exploring new technologies.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C, C++, Java, Python</li>
+                <li><strong>Tools:</strong> Git, GitHub, Linux (Ubuntu/Kali
