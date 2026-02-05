@@ -5,8 +5,10 @@ title: Home
 
 ## Aditya Pandey
 
-**CSE Undergraduate · Research-Oriented Developer**  
+**First-year CSE student at MIT Manipal**  
+Aspiring research-oriented developer  
 Alias: `K0RAG`
+
 
 I am a problem solver driven by a strong imagination and a desire to build systems that **evolve**, not just execute.  
 My focus lies in understanding fundamentals deeply and applying them to meaningful engineering problems.
