@@ -116,3 +116,113 @@
         footer {
             text-align: center;
             padding: 60px 20px;
+            border-top: var(--border-style);
+            margin-top: 50px;
+            background: #050505;
+        }
+
+        .social-links {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: var(--neon-green);
+            font-size: 1.8rem;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            color: white;
+            transform: translateY(-5px);
+            text-shadow: 0 0 15px var(--neon-green);
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('repos')">Repositories</a>
+        <a onclick="showPage('blog')">Blog</a>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="page active">
+            <header class="section-box">
+                <h1>> ADITYA PANDEY</h1>
+                <p>Alias: <span class="accent-text">K0RAG</span></p>
+                <p>CSE Student @ <span class="accent-text">MIT MANIPAL</span></p>
+            </header>
+
+            <section class="section-box">
+                <h2>About Me</h2>
+                <p>I am a problem solver with a strong imagination. I aim to build innovative tools that assist the next generation of engineers. My focus is on turning complex ideas into functional code.</p>
+            </section>
+
+            <section class="section-box">
+                <h2>Technical Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">Linux</div>
+                    <div class="skill-tag">Git/GitHub</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                </div>
+            </section>
+        </div>
+
+        <div id="repos" class="page">
+            <div class="section-box">
+                <h2>Projects & Code</h2>
+                <div class="coming-soon">
+                    <p style="font-size: 1.5rem; color: white;">[ REPOSITORIES_LOADING... ]</p>
+                    <p style="margin-top: 10px;">Establishing secure connection to GitHub...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="page">
+            <div class="section-box">
+                <h2>Thoughts & Insights</h2>
+                <div class="coming-soon">
+                    <p style="font-size: 1.5rem; color: white;">[ DECRYPTING_POSTS... ]</p>
+                    <p style="margin-top: 10px;">Content under development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/K0RAG" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/aditya_1053_?igsh=a3cxYzY1aXRpempj" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:pandeyaditya1053@gmail.com" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+        <p class="footer-note">© 2026 K0RAG | Handcrafted in Manipal</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>
