@@ -1,9 +1,16 @@
 title: Aditya Pandey
-description: Research logs, projects, and learning notes
-theme: minima
+description: Research logs, systems thinking, and AI exploration
+url: "https://K0RAG.github.io"
 
 author:
   name: Aditya Pandey
   email: pandeyaditya1053@gmail.com
 
 markdown: kramdown
+theme: null
+permalink: pretty
+
+header_pages:
+  - index.md
+  - blog.md
+  - projects.md
