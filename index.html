@@ -3,83 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | K0RAG</title>
+    <title>Aditya Pandey | K0RAG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Modern Dark Theme CSS */
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f1f5f9;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
+            --bg-black: #0a0a0a;
+            --card-bg: #121212;
+            --neon-green: #00ff41; 
+            --dark-green: #003b00;
+            --text-gray: #a0a0a0;
+            --border-style: 1px solid #00ff4133;
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--neon-green);
             line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
             padding: 20px;
+            background: rgba(10, 10, 10, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: var(--border-style);
         }
-        /* Header */
-        header {
+
+        nav a {
+            color: var(--neon-green);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 10px var(--neon-green);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            min-height: 80vh;
+        }
+
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-box {
+            background: var(--card-bg);
+            border: var(--border-style);
+            padding: 30px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-box::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+        }
+
+        h1, h2 { text-transform: uppercase; margin-bottom: 20px; letter-spacing: 3px; }
+        .accent-text { color: white; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            border: var(--border-style);
+            padding: 5px 10px;
+            text-align: center;
+            background: var(--dark-green);
+        }
+
+        .coming-soon {
             text-align: center;
             padding: 80px 20px;
+            border: 2px dashed var(--dark-green);
         }
-        h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
-        .subtitle { color: var(--accent); font-size: 1.2rem; font-weight: bold; }
-        
-        /* Sections */
-        section { margin-bottom: 60px; }
-        h2 { border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
-        
-        /* Projects Grid (Hidden for now, but ready for later) */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .project-card {
-            background: var(--card-bg);
-            padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.2s;
-        }
-        .project-card:hover { transform: translateY(-5px); }
-        .project-card h3 { margin-top: 0; color: var(--accent); }
-        
-        /* Links */
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        
-        /* Footer */
-        footer { text-align: center; color: var(--text-muted); padding: 40px; font-size: 0.9rem; }
-    </style>
-</head>
-<body>
 
-    <div class="container">
-        <header>
-            <h1>K0RAG</h1>
-            <p class="subtitle">Computer Science Student & Developer</p>
-            <p>Passionate about building scalable software, AI, and solving complex problems.</p>
-        </header>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am a student at <strong>MIT MANIPAL</strong>. I love turning ideas into code. 
-                Currently, I am focused on strengthening my fundamentals in Computer Science and exploring new technologies.
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> C, C++, Java, Python</li>
-                <li><strong>Tools:</strong> Git, GitHub, Linux (Ubuntu/Kali
+        /* Footer & Social Icons */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
