@@ -5,36 +5,31 @@ title: My Work
 
 # My Work
 
-This page lists my repositories, folders, and files.
+This page lists my repositories, folders, and important files.
 
 ---
-## 🔗 GitHub Repositories (Auto-fetched)
 
-{% if site.github.public_repositories %}
-{% for repo in site.github.public_repositories %}
-{% unless repo.name == "K0RAG.github.io" %}
+## 🔗 GitHub Repositories
 
-### 🔹 [{{ repo.name }}]({{ repo.html_url }})
+- 🔹 [K0RAG.github.io](https://github.com/K0RAG/K0RAG.github.io)  
+  Personal website built using GitHub Pages and Jekyll.
 
-{{ repo.description }}
-
-⭐ Stars: {{ repo.stargazers_count }}
+- 🔹 [My GitHub Profile](https://github.com/K0RAG)  
+  All my public repositories and ongoing work.
 
 ---
-{% endunless %}
-{% endfor %}
-{% else %}
-GitHub repositories could not be loaded.
-{% endif %}
 
-## 📁 Project Structure Example
+## 📁 Repository Structures (Important Projects)
+
+### 📌 AI-Project
+🔗 https://github.com/K0RAG/AI-Project *(example link)*
 
 ```text
 AI-Project/
 ├── data/
-│   └── dataset.csv
+│   └── dataset.csv        # Raw and processed datasets
 ├── models/
-│   └── svm.py
+│   └── svm.py             # Machine Learning model
 ├── notebooks/
-│   └── analysis.ipynb
-└── README.md
+│   └── analysis.ipynb     # Experiments & visualization
+└── README.md              # Project documentation
