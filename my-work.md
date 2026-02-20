@@ -8,13 +8,24 @@ title: My Work
 This page lists my repositories, folders, and files.
 
 ---
+## 🔗 GitHub Repositories (Auto-fetched)
 
-## 🔗 GitHub Repositories
+{% if site.github.public_repositories %}
+{% for repo in site.github.public_repositories %}
+{% unless repo.name == "K0RAG.github.io" %}
 
-- 🔹 [K0RAG.github.io](https://github.com/K0RAG/K0RAG.github.io)
-- 🔹 [Add your repo here](https://github.com/K0RAG)
+### 🔹 [{{ repo.name }}]({{ repo.html_url }})
+
+{{ repo.description }}
+
+⭐ Stars: {{ repo.stargazers_count }}
 
 ---
+{% endunless %}
+{% endfor %}
+{% else %}
+GitHub repositories could not be loaded.
+{% endif %}
 
 ## 📁 Project Structure Example
 
