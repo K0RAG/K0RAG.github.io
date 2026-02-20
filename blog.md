@@ -1,12 +1,16 @@
 ---
 layout: default
 title: Blog
-permalink: /blog/
 ---
 
-## Research Logs
+# Blog
 
 {% for post in site.posts %}
-- **[{{ post.title }}]({{ post.url }})**  
-  <small>{{ post.date | date: "%d %B %Y" }}</small>
+## [{{ post.title }}]({{ post.url }})
+
+📅 {{ post.date | date: "%d %B %Y" }}
+
+{{ post.excerpt }}
+
+---
 {% endfor %}
