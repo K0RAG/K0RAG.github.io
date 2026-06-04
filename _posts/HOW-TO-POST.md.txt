@@ -1,0 +1,72 @@
+# HOW TO WRITE A NEW BLOG POST
+# ================================
+# Every blog post is a Markdown file inside the _posts/ folder.
+#
+# STEP 1 — Name the file correctly:
+#   Format:  YYYY-MM-DD-your-post-title.md
+#   Example: 2026-06-04-thoughts-on-machine-learning.md
+#
+# STEP 2 — Copy the template below into your new file.
+#
+# STEP 3 — Fill in your content. Write in Markdown.
+#
+# STEP 4 — Save the file. Push to GitHub. Done.
+#   Git commands:
+#     git add _posts/your-post-file.md
+#     git commit -m "New post: Your Post Title"
+#     git push
+#
+# The post will appear on /blog/ automatically.
+
+# ── TEMPLATE (copy everything below this line) ──────────────
+
+---
+layout: post
+title: "Your Post Title Here"
+date: 2026-06-04 00:00:00 +0530
+tags: [tag1, tag2]
+excerpt: "One sentence summary. Shows up on the blog list page."
+---
+
+Your intro paragraph here. Write whatever you want.
+
+## A Section Heading
+
+More content. You can use all standard Markdown:
+
+- Bullet lists
+- Like this
+
+1. Numbered lists
+2. Work too
+
+**Bold text** and *italic text* work normally.
+
+## Code Blocks
+
+```python
+def hello():
+    print("Hello from K0RAG")
+```
+
+## Blockquotes
+
+> A quote or a key idea you want to highlight.
+
+## Links
+
+[Link text](https://example.com)
+
+---
+
+That's it. No complicated setup needed.
+
+# ── TAGS REFERENCE ──────────────────────────────────────────
+# Use any tags you want. Suggested ones:
+#   thinking    — opinions, philosophy, ideas
+#   tech        — technical content, code
+#   learning    — notes from studying something
+#   ai          — AI/ML related
+#   meta        — about the site or writing itself
+#   linux       — linux/systems stuff
+#   project     — updates on a specific project

@@ -1,17 +1,31 @@
 title: Aditya Pandey
-description: Research logs, systems thinking, and AI exploration
-url: "https://K0RAG.github.io"
+description: First-year CSE student at MIT Manipal. Builder. Thinker. K0RAG.
+baseurl: ""
+url: "https://k0rag.github.io"
+author: Aditya Pandey
+email: pandeyaditya1053@gmail.com
 
-author:
-  name: Aditya Pandey
-  email: pandeyaditya1053@gmail.com
+github_username: K0RAG
+instagram_username: aditya_1053_
+linkedin_username: Aditya Pandey
+
+permalink: /:year/:month/:day/:title/
 
 markdown: kramdown
-theme: null
-permalink: pretty
+highlighter: rouge
 
-header_pages:
-  - index.md
-  - blog.md
-  - projects.md
-github: [metadata]
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Aditya Pandey"
